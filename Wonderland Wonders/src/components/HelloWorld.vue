@@ -1,20 +1,22 @@
 <script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
-})
+
 </script>
 
 <template>
-  <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      You’ve successfully created a project with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
-    </h3>
+  <div class="password-input">
+    <label for="password">
+      Enter password
+    </label>
+
+    <!-- We'll add stuff to this input later -->
+    <input
+      type="password"
+      id="password"
+    >
+
+    <button>
+      Show password
+    </button>
   </div>
 </template>
 
@@ -41,4 +43,36 @@ h3 {
     text-align: left;
   }
 }
+
+  .password-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  input {
+    margin-bottom: 12px;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  button {
+    margin-bottom: 12px;
+  }
+
+  .requirements {
+    font-weight: bold;
+  }
+
+  .is-success {
+    color: #96CA2D;
+  }
+
+  .is-error {
+    color: #BA3637;
+  }
 </style>
