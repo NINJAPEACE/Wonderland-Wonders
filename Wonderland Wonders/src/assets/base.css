@@ -22,6 +22,7 @@
 }
 
 /* semantic color variables for this project */
+/*
 :root {
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
@@ -34,6 +35,18 @@
   --color-text: var(--vt-c-text-light-1);
 
   --section-gap: 160px;
+}
+*/
+:root {
+  --color-background: var(--vt-c-black);
+  --color-background-soft: var(--vt-c-black-soft);
+  --color-background-mute: var(--vt-c-black-mute);
+
+  --color-border: var(--vt-c-divider-dark-2);
+  --color-border-hover: var(--vt-c-divider-dark-1);
+
+  --color-heading: var(--vt-c-text-dark-1);
+  --color-text: var(--vt-c-text-dark-2);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,7 +74,7 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: var(--color-background);
+  background-color: var(--color-background);
   transition:
     color 0.5s,
     background-color 0.5s;
@@ -83,4 +96,14 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+}
+
+body.fake_2 {
+  background-color: #530049;
+  color: black;
+  font-size:45px;
 }
