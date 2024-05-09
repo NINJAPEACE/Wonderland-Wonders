@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import TheHareQuestView from '../views/TheHareQuestView.vue'
+import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,7 +7,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: TheHareQuestView
+      component: HomeView
     },
     {
       path: '/theharequestyoushouldntknow',
