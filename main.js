@@ -8,7 +8,7 @@
 let input_is_password = 1;
 let got_how_many_fake = 0;
 
-let fake_items_list = [1, 2];
+let fake_items_list = [1, 2, 3, 4, 5];
 let fake_list_length = fake_items_list.length;
 let active_fake_items;
 let already_used_fake_items = [];
@@ -38,7 +38,7 @@ function generateFormField(status, guide_typing) {
 }
 
 function show_password_text() {
-  if (active_fake_items != "real" && got_how_many_fake == 2) {
+  if (active_fake_items != "real" && got_how_many_fake == 1) {
     generateFormField(1, guide_typing);
     _("body").className = "";
   } else if (active_fake_items == "real") {
@@ -57,6 +57,18 @@ function show_password_text() {
       "fake-2": {
         guide: "Did you just consume something? I feel something weird has happened...••Hey, click again! You want to do the quest right?",
         placeholder: "Eat me or drink me?"
+      },
+            "fake-3": {
+        guide: "You should save her, Alice.",
+        placeholder: "Why, Alice?"
+      },
+            "fake-4": {
+        guide: "Ah, must be those fat guys, are not they?",
+        placeholder: "Yes it is me, Alice. Eh, no, it is him, eh what? It is me!"
+      },
+            "fake-5": {
+        guide: "Hmmm",
+        placeholder: "Then I will start to kill you, my dear, Alice."
       }
     }
 
