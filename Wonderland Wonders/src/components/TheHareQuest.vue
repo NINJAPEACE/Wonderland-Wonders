@@ -244,8 +244,10 @@
     </div>
 
     <div class="form">
-     <input v-for="item in list" :placeholder="item.placeholder" :class="item.name + ' password'" :ref="item.name" type="password" v-on:keyup.enter="onEnter">
+      <form>
+     <input v-for="item in list" :placeholder="item.placeholder" :class="item.name + ' password'" :ref="item.name" type="password" v-on:keyup.enter="onEnter" autocomplete="true">
       <button class="eye" id="eye" :onclick="show_password"><i class="fas fa-eye"></i></button>
+        </form>
     </div>
     <button class="send" :onclick="send_password" ref="send">Send?</button>
   </div>
