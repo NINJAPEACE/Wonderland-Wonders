@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
 body {
   height: 100vh;
   display: flex;
@@ -11,6 +13,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-size:14pt;
+  font-weight: 500;
+  font-style: normal;
+  text-align:center;
 }
 
 .animate {
@@ -77,6 +85,7 @@ h3 {
 .form {
   width: 100%;
   padding: 15px;
+  text-align:center;
 }
 
 .password {
@@ -158,5 +167,3 @@ body.fake-2 {
   background-color: #530049;
   color: black;
 }
-
-/* PALLETTE COLOUR, BUTTON, EYE */
