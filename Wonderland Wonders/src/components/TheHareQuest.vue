@@ -147,7 +147,6 @@
     if (active_password.value) {
       password[active_password.value][0].classList.remove("active")
     }
-    
     password[num][0].classList.add("active");
     active_password.value = num;
     if (fake_list_length.value != fake_list.value.length && !status) typing(85, "guide", "The real input should be this one, Alice, I guess...");
@@ -244,7 +243,7 @@
     </div>
 
     <div class="form">
-      <form>
+      <form onsubmit="return false">
      <input v-for="item in list" :placeholder="item.placeholder" :class="item.name + ' password'" :ref="item.name" type="password" v-on:keyup.enter="onEnter" autocomplete="true">
       <button class="eye" id="eye" :onclick="show_password"><i class="fas fa-eye"></i></button>
         </form>
